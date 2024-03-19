@@ -1,0 +1,44 @@
+.navbar {
+  background-color: grey;
+  color: black;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: black !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: black !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link.login,
+.navbar-nav .nav-link.signup {
+  color: blue !important;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    color: red;
+  }
+  50% {
+    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+    color: #ff4d4d;
+  }
+  100% {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    color: red;
+  }
+}
+
+.order-link {
+  animation: glow 0.5s infinite alternate;
+}
